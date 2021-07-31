@@ -50,7 +50,7 @@ function rollDice(){
             // sovrascrivo il portafogli
             document.getElementById('user_wallet').innerHTML = myWallet;
             // Comunico l'esito della giocata
-            document.getElementById('esito').innerHTML = "Hai Vinto: " + myBit + "€";
+            document.getElementById('esito').innerHTML = "WOW!! hai vinto " + myBit + "€";
 
         } else if (userDice < cpuDice){ // PERSO
 
@@ -59,7 +59,7 @@ function rollDice(){
             // sovrascrivo il portafogli
             document.getElementById('user_wallet').innerHTML = myWallet;
             // Comunico l'esito della giocata
-            document.getElementById('esito').innerHTML = "Hai Perso: " + myBit + "€";
+            document.getElementById('esito').innerHTML = "Peccato! hai perso: " + myBit + "€";
 
         } else{ // PAREGGIO
 
