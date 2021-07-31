@@ -30,11 +30,10 @@ var diceFace = ['error 0', '<i class="fas fa-dice-one"></i>', '<i class="fas fa-
 function rollDice(){
 
     if (isNaN(parseInt(document.getElementById('my_bit').value))){
-        alert('Non hai iserito un valore valido da scommettere!!')
+        alert('Non hai inserito un valore valido da scommettere!!')
     } else {
         // Tiro i dadi
         var userDice = parseInt(Math.random() * 6) + 1;
-        console.log(userDice);
         var cpuDice = parseInt(Math.random() * 6) + 1;
 
         // Mostro il numero uscito
