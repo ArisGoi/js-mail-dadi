@@ -192,12 +192,14 @@ span#user_dice{
     position: absolute;
     right: 0;
     bottom: 0;
+    animation: dring 0.1s ease-in;
+    animation-delay: 0.8s;
+    animation-iteration-count: 6;
 }
 .alert.hide{
     display: none;
 }
 /* ANIMATIONS */
-
 .char-maiku{
     animation: float-maiku 4s infinite;
 }
@@ -210,5 +212,20 @@ span#user_dice{
     }
     100%{
         transform: translate(50%, 40%);
+    }
+}
+
+@keyframes dring{
+    0%{
+        transform: rotate(0deg);
+    }
+    33%{
+        transform: rotate(2deg);
+    }
+    66%{
+        transform: rotate(-2deg);
+    }
+    100%{
+        transform: rotate(0deg);
     }
 }
