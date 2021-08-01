@@ -31,7 +31,7 @@
                 <!-- Player -->
                 <div class="puntata">
                     <label for="my_bit">La tua puntata: €</label>
-                    <input id="my_bit" type="number" placeholder="none"><span></span>
+                    <input id="my_bit" type="number" placeholder="00"><span></span>
                 </div>
 
                 <span id="user_dice"><i class="fas fa-dice"></i></span>
@@ -47,6 +47,20 @@
                     <div class="sq-element maiku-dice">Il tiro di Maikuman: <span id="cpu_dice"></span></div>
                 </div>
             </div>
+        </div>
+
+        <div id="alert" class="alert hide">
+            <div class="puntata">
+                <label for="my_bit">La tua puntata: €</label>
+                <input id="my_bit" type="number" placeholder="00"><span></span>
+            </div>
+
+            <div class="alert-box">
+                <img src="img/chara_alert.png" alt="">
+                <p>Attento! Non hai inserito una puntata!!</p>
+            </div>
+        
+            <button class="btn-main" onclick="addHide()">Chiudi alert</button>
         </div>
     </main>
     

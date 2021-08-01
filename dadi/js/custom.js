@@ -30,7 +30,7 @@ var diceFace = ['error 0', '<i class="fas fa-dice-one"></i>', '<i class="fas fa-
 function rollDice(){
 
     if (isNaN(parseInt(document.getElementById('my_bit').value))){
-        alert('Non hai inserito un valore valido da scommettere!!')
+        document.getElementById("alert").classList.remove("hide");
     } else {
         // Tiro i dadi
         var userDice = parseInt(Math.random() * 6) + 1;
@@ -67,4 +67,8 @@ function rollDice(){
             document.getElementById('esito').innerHTML = "Hai un Pareggio!";
         }
     }
+}
+
+function addHide(){
+    document.getElementById("alert").classList.add("hide");
 }
