@@ -29,7 +29,7 @@ var diceFace = ['error 0', '<i class="fas fa-dice-one"></i>', '<i class="fas fa-
 
 function rollDice(){
 
-    if (isNaN(parseInt(document.getElementById('my_bit').value))){
+    if (isNaN(parseInt(document.getElementById('my_bit').value)) || document.getElementById('my_bit').value < 1){
         document.getElementById("alert").classList.remove("hide");
     } else {
         // Tiro i dadi
@@ -66,6 +66,10 @@ function rollDice(){
             // Comunico l'esito della giocata
             document.getElementById('esito').innerHTML = "Hai un Pareggio!";
         }
+    }
+
+    if (myWallet < 0){
+        document.getElementById("loseAlert").classList.remove("hide")
     }
 }
 
