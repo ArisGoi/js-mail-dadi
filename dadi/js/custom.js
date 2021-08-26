@@ -68,7 +68,7 @@ function rollDice(){
         }
     }
 
-    if (myWallet < 0){
+    if (myWallet <= 0){
         document.getElementById("loseAlert").classList.remove("hide")
     }
 }
